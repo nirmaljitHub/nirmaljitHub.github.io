@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Food Hub</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/feedback.css">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/foodHub_logo1.jpg" alt="Food Hub logo" height="80" width="150"></a>
+		<h2>Food Hub</h2>
+		<h3><span class="shadow">You are Heartily Welcome in FOOD HUB</span></h3>
+	</header>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="table.html" class="current">Food Types</a>
+				<ul>
+                	<li><a href="table.html">Canadian</a></li>
+                	<li><a href="table.html">Indian</a>
+						<ul>
+							<li><a href="table.html">Punjabi</a></li>
+							<li><a href="table.html">Karnataka</a></li>
+							<li><a href="table.html">Madhya Pradesh</a></li>
+						</ul>
+					</li>	
+                	<li><a href="table.html">Mexican</a>
+						<ul>
+							<li><a href="table.html">Northern Mexico: BURRITO</a></li>
+							<li><a href="table.html">Western Mexico: Birria</a></li>
+							<li><a href="table.html">Baja California: Taco</a></li>
+						</ul>
+					</li>
+					
+            	</ul>
+			</li>
+        	<li><a href="table.html" class="current">Varieties</a>
+				<ul>
+                	<li><a href="table.html">Canadian</a></li>
+                	<li><a href="table.html">Indian</a></li>
+                	<li><a href="table.html">Mexican</a></li>
+            	</ul>
+			</li>
+        	<li><a href="#" class="current">feedback</a></li>
+        	<li><a href="history.html" class="current"> About Us</a>
+            	<ul>
+                	<li><a href="history.html">Our History</a></li>
+            	</ul>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+		<aside id="asideLeft">
+				<h2>Food Recipes</h2>
+				<h3><br><a href="speakers/toobin.html">Poutine</a></h3>
+				<img src="images/canadian/cad1.jpg" alt="poutine photo" height="80">
+				<h3><br><a href="speakers/sorkin.html">Donair</a></h3>
+				<img src="images/canadian/cad2.jpg" alt="donair photo" height="80">
+				<h3><br><a href="speakers/chua.html">Butter Paneer</a></h3>
+				<img src="images/ind1.jpg" alt="ButterPaneer photo" height="80">
+				<h3><br><a href="speakers/c7_sampson.html">Tacos</a></h3>
+				<img src="images/mxn1.jpg" alt="Taco photo" height="80">
+			</aside>
+			
+			<div id="secDiv">
+				<section>
+					<h1>Feedback Form</h1>
+					<form action="register_account.html" method="get"
+						name="registration_form" id="registration_form">
+						<fieldset>
+							<legend>Visitor Information</legend>
+							
+							<label for="first_name">First Name:</label>
+							<input type="text" name="first_name" id="first_name" required><br>
+							
+							<label for="email">E-Mail:</label>
+							<input type="email" name="email" id="email" autofocus required><br>
+							
+							
+						</fieldset>
+						<fieldset>
+							<legend>Variety selection</legend>
+							<label for="order_type">Food Type:</label>
+							<select name="order_type" id="order_type">
+								<option value="m">Canadian</option>
+								<option value="d">Indian</option>            
+								<option value="s">Mexican</option>
+							</select><br>
+						</fieldset>
+						<fieldset>
+							<label id="review" for="order_type">Please provide review</label><br>
+							<textarea rows="7" cols="50"></textarea>
+						</fieldset>
+						
+						<fieldset id="buttons">
+							<legend>Submit Feedback</legend>
+							<label>&nbsp;</label>
+							<button onclick="myFunction()" type="submit" id="submit" value="Submit">Submit</button>
+								<script>
+								function myFunction(){
+									alert("The form has been Submitted");
+								}
+								</script>
+							
+							<input type="reset" id="reset" value="Reset Fields"><br>
+						</fieldset>
+					</form>
+				</section>
+				
+				<aside id="asideRight">
+					<h2>Food Recipes</h2>
+					
+					<fieldset>
+					<legend>My website is/was</legend>
+						Fun to visit: <input type="checkbox" checked="yes" 
+						name="fun" value="fun" /> <br> 
+						Well Designed: <input type="checkbox" checked="yes" 
+						name="sports" value="football" /> <br /> 
+						Uses Good Colours: <input type="checkbox" checked="yes" 
+						name="sports" value="baseball" /> <br /> 
+						
+					</fieldset>
+					
+					<fieldset id="radio">
+							<legend>Will u visit again</legend>
+							<input type="radio" name="payment_type" id="bill" value="bill">
+							<label for="bill">Yes</label>
+							<input type="radio" name="payment_type" id="credit" value="credit">
+							<label for="credit">No</label>
+					</fieldset>
+				</aside>
+			</div>
+	</main>
+	<footer>
+		<p>&copy; 2019, Up In Farms, CA 55555</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,262 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #8FBC8F;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 980px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+	background-image: url(../images/bground3.jpg);
+	
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 4em 0;
+	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+	    30deg, #6B8E23 0%, #6B8E23 30%, darkseagreen 50%, #6B8E23 80%, #6B8E23 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #6B8E23 0%, #6B8E23 30%, darkseagreen 50%, #6B8E23 80%, #6B8E23 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #6B8E23 0%, #6B8E23 30%, darkseagreen 50%, #6B8E23 80%, #6B8E23 100%);
+	background-image: linear-gradient(
+	    30deg, #6B8E23 0%, #6B8E23 30%, darkseagreen 50%, #6B8E23 80%, #6B8E23 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	font-weight:bold
+}
+header img {
+	float: left;
+	padding: 0 15px 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 196px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #8B4513;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #32CD32;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul ul {
+    position: absolute;
+    top: 0%;
+	left:100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+/* the styles for the section */
+
+#secDiv{
+	float: right;
+}
+
+
+section h1 {
+	font-size: 150%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+section {
+	color: navy;
+	border-left: 1px solid #8B4513;
+	width: 450px;
+	float: left;
+	padding: 20px 20px 20px 20px;
+	border-right: 1px solid #8B4513;
+}
+
+/* the styles for the form */
+fieldset {
+    margin-bottom: .5em;
+    padding: .5em 1em;
+}
+legend {
+    font-weight: bold;
+    font-size: 85%;
+    padding-bottom: .5em;
+}
+label, input, select {
+	font-size: 90%;
+}
+label {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+#review{
+	float: left;
+    width: 10em;
+    text-align: left;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] input:invalid {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#radio label {
+	float: none;
+}
+#radio input {
+	width: auto;
+	margin-left: 0em;
+}
+#exp_month {
+	width: 7em;
+}
+#exp_year {
+	width: 5em;
+}
+#buttons input {
+	width: 10em;
+}
+
+
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+#asideLeft {
+	width: 150px;
+	float: left;
+	padding: 0 0 20px 10px;
+}
+#asideLeft h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+#asideLeft h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+#asideLeft img {
+	padding-bottom: 0em;
+	border: 1px solid black;
+	
+}
+
+
+
+#asideRight {
+	width: 308px;
+	float: right;
+	padding: 0 0 20px 20px;
+	text-align:left;
+}
+#asideRight h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+#asideRight h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+#asideRight img {
+	padding-bottom: 0em;
+	border: 1px solid black;
+	
+}
+
+
+/* the styles for the footer */
+footer {
+	background-color: #8B4513;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
